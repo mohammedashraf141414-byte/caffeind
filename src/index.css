@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image: linear-gradient(
+        to right,
+        rgba(243, 238, 231, 0.08) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(243, 238, 231, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .scrollbar-caramel {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(169, 116, 91, 0.65) rgba(42, 25, 18, 0.35);
+  }
+
+  .scrollbar-caramel::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar-caramel::-webkit-scrollbar-track {
+    background: rgba(42, 25, 18, 0.35);
+    border-radius: 9999px;
+  }
+
+  .scrollbar-caramel::-webkit-scrollbar-thumb {
+    background: rgba(169, 116, 91, 0.55);
+    border-radius: 9999px;
+    border: 2px solid rgba(42, 25, 18, 0.35);
+  }
+
+  .scrollbar-caramel::-webkit-scrollbar-thumb:hover {
+    background: rgba(169, 116, 91, 0.75);
+  }
+}
