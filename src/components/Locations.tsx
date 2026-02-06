@@ -63,7 +63,7 @@ function StatusPill({ status }: { status: Location['status'] }) {
 
 export default function Locations() {
   return (
-    <section id="locations" className="relative py-20 bg-espresso-600">
+    <section id="locations" className="relative py-20 bg-espresso-500">
       <div className="mx-auto max-w-6xl px-4">
         <SectionHeader
           eyebrow="LOCATIONS"
